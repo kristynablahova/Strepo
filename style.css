@@ -1,0 +1,187 @@
+ 
+ body {
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h5 {
+    font-weight: 700;
+  }
+
+  .btn-primary {
+    background-color: #0d6efd;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+  }
+
+  .btn-outline-primary {
+    border-color: #0d6efd;
+    color: #0d6efd;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+
+.nav-large {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.nav-link-lg {
+  font-size: 1.15rem;
+  padding: 0.6rem 1rem;
+}
+
+
+.navbar-brand {
+  font-size: 1.75rem;
+}
+
+  .card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+
+  .card-body i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0d6efd;
+  }
+
+  .hero {
+    height: 100vh;
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    position: relative;
+    color: white;
+  }
+
+  .hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .hero .container {
+    z-index: 2;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .gallery h6 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+
+  @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+
+  .promo-modal {
+  border-radius: 1rem;
+  background: #fff8f0;
+  overflow: hidden;
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.promo-header {
+  background: #d90429;
+  color: white;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.highlight-price {
+  color: #d90429;
+  background-color: #fff1f1;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.75rem;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.btn-danger {
+  background-color: #ff4500;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+ggvv
+.btn-danger:hover {
+  background-color: #e03d00;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: opacity 0.3s ease, background-color 0.2s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0b5ed7;
+}
+
