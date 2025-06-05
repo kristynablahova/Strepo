@@ -37,10 +37,19 @@
 </nav>
 
 
-<!-- Hero sekce -->
-<section class="hero d-flex align-items-center text-center text-white">
-  <div class="overlay"></div>
-  <div class="container">
+<!-- Hero sekce s videem na pozadí -->
+<section class="hero d-flex align-items-center text-center text-white position-relative overflow-hidden">
+  <!-- Video na pozadí -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="pictures/cisteni-strechy.mp4" type="video/mp4">
+    Váš prohlížeč nepodporuje přehrávání videa.
+  </video>
+
+  <!-- Překryvná vrstva pro ztmavení -->
+  <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+  <!-- Obsah sekce -->
+  <div class="container position-relative z-2">
     <h1 class="display-3 fw-bold mb-4">Vracíme fasádám jejich původní lesk</h1>
     <p class="lead mb-4">Profesionální čištění, impregnace a renovace – šetrně, rychle a bez starostí</p>
     <a href="#kontakt" class="btn btn-primary btn-lg">Získat nezávaznou nabídku</a>
@@ -138,34 +147,35 @@
 <section id="reference" class="section bg-light text-center">
   <div class="container">
     <h2>Naše práce</h2>
-    <p class="lead mb-5">Ukázky realizací – fotografie před a po čištění fasád</p>
+    <p class="lead mb-5">Proměny, které uvidíte na první pohled – střechy, fasády i dlažby před a po</p>
     <div class="row g-4 justify-content-center gallery">
 
       <div class="col-md-5">
-        <h6>Před čištěním</h6>
-        <img src="https://via.placeholder.com/500x300?text=Před+čištěním+1" alt="Fasáda před čištěním 1" class="img-fluid shadow">
+        <h6>Střecha před čištěním</h6>
+        <img src="pictures/strecha-pred.jpg" alt="Střecha před čištěním 1" class="img-fluid shadow">
       </div>
       <div class="col-md-5">
-        <h6>Po čištění</h6>
-        <img src="https://via.placeholder.com/500x300?text=Po+čištění+1" alt="Fasáda po čištění 1" class="img-fluid shadow">
-      </div>
-
-      <div class="col-md-5">
-        <h6>Před čištěním</h6>
-        <img src="https://via.placeholder.com/500x300?text=Před+čištěním+2" alt="Fasáda před čištěním 2" class="img-fluid shadow">
-      </div>
-      <div class="col-md-5">
-        <h6>Po čištění</h6>
-        <img src="https://via.placeholder.com/500x300?text=Po+čištění+2" alt="Fasáda po čištění 2" class="img-fluid shadow">
+        <h6>Střecha po čištění</h6>
+        <img src="pictures/strecha-po.jpg" alt="Střecha po čištění 1" class="img-fluid shadow">
       </div>
 
       <div class="col-md-5">
-        <h6>Před čištěním</h6>
-        <img src="https://via.placeholder.com/500x300?text=Před+čištěním+3" alt="Fasáda před čištěním 3" class="img-fluid shadow">
+        <h6>Dlažba před čištěním</h6>
+        <img src="pictures/dlazba-pred.jpg" alt="Dlažba před čištěním 2" class="img-fluid shadow">
       </div>
       <div class="col-md-5">
-        <h6>Po čištění</h6>
-        <img src="https://via.placeholder.com/500x300?text=Po+čištění+3" alt="Fasáda po čištění 3" class="img-fluid shadow">
+        <h6>Dlažba po čištění</h6>
+        <img src="pictures/dlazba-po.jpg" alt="Dlažba po čištění 2" class="img-fluid shadow">
+      </div>
+
+      <div class="col-md-5">
+        <h6>Rozdíl před čištěním a po čištění</h6>
+        <img src="pictures/strecha-1.jpg" alt="Střecha před/po" class="img-fluid shadow">
+      </div>
+      <div class="col-md-5">
+        <h6>Rozdíl před čištěním a po čištění</h6>
+        <img src="pictures/dlazba-1.jpg" alt="Dlažba před/po" class="img-fluid shadow">
+>>>>>>> c486951 (doplnene-obrazky)
       </div>
 
     </div>
@@ -178,20 +188,20 @@
     <h2>Kontaktujte nás</h2>
     <p class="lead mb-4">Získejte cenovou nabídku zdarma</p>
     <form class="row g-3 justify-content-center" novalidate>
-      <div class="col-md-5">
-        <input type="text" class="form-control" placeholder="Vaše jméno" required>
-      </div>
-      <div class="col-md-5">
-        <input type="email" class="form-control" placeholder="Váš e-mail" required>
-      </div>
-      <div class="col-10">
-        <textarea class="form-control" rows="4" placeholder="Vaše zpráva" required></textarea>
-      </div>
-      <div class="col-10">
-        <button type="submit" class="btn btn-primary px-5">Odeslat</button>
-      </div>
-    </form>
-    <p class="mt-4">Tel: <strong>+420 123 456 789</strong> | Email: <strong>info@fasadypro.cz</strong></p>
+  <div class="col-10 col-md-5">
+    <input type="text" class="form-control" placeholder="Vaše jméno" required>
+  </div>
+  <div class="col-10 col-md-5">
+    <input type="email" class="form-control" placeholder="Váš e-mail" required>
+  </div>
+  <div class="col-10">
+    <textarea class="form-control" rows="4" placeholder="Vaše zpráva" required></textarea>
+  </div>
+  <div class="col-10">
+    <button type="submit" class="btn btn-primary px-5">Odeslat</button>
+  </div>
+</form>
+    <p class="mt-4">Tel: <strong>+420 771 177 982</strong> | Email: <strong>info@strepo.cz</strong></p>
   </div>
 </section>
 
