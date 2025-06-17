@@ -8,25 +8,6 @@
     font-weight: 700;
   }
 
-  .btn-primary {
-    background-color: #0d6efd;
-    border: none;
-  }
-
-  .btn-primary:hover {
-    background-color: #0b5ed7;
-  }
-
-  .btn-outline-primary {
-    border-color: #0d6efd;
-    color: #0d6efd;
-  }
-
-  .btn-outline-primary:hover {
-    background-color: #0d6efd;
-    color: #fff;
-  }
-
 .nav-large {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
@@ -56,7 +37,6 @@
   .card-body i {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #0d6efd;
   }
 
   .hero {
@@ -157,34 +137,6 @@
   }
 }
 
-.btn-danger {
-  background-color: #ff4500;
-  border: none;
-  transition: background-color 0.2s ease;
-}
-ggvv
-.btn-danger:hover {
-  background-color: #e03d00;
-}
-
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 48px;
-  height: 48px;
-  font-size: 1.5rem;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  transition: opacity 0.3s ease, background-color 0.2s ease;
-}
-
-#scrollToTopBtn:hover {
-  background-color: #0b5ed7;
-}
-
 #kontakt form {
   max-width: 800px;
   margin: 0 auto;
@@ -212,4 +164,71 @@ ggvv
   height: 100%;
   width: 100%;
 }
+
+/* ZÁKLADNÍ TLAČÍTKO – PLNÁ ŽLUTÁ */
+.btn,
+.btn-primary {
+  background-color: #ffed00;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background-color: #e6d800; /* tmavší žlutá při najetí */
+  color: #555;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* OBTAŽENÉ TLAČÍTKO – ŽLUTÝ RÁMEČEK */
+.btn-outline-primary {
+  background-color: transparent;
+  border: 4px solid #ffed00;
+  color: #555;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffed00;
+  color: #555;
+  border: none;
+}
+
+/* NEBEZPEČNÉ TLAČÍTKO – PŘEDĚLANÉ DO ORANŽOVA */
+.btn-danger {
+  background-color: #ff4500;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: #e03d00;
+}
+
+/* TLAČÍTKO NAHOŘE – DOPLŇKOVÉ */
+#scrollToTopBtn {
+  background-color: #ffed00;
+  color: #000;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #e6d800;
+}
+
+.icon-yellow {
+  color:#ffed00 !important;
+}
+
 
