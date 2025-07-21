@@ -13,6 +13,10 @@
   padding-bottom: 0.8rem;
 }
 
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
 .nav-link-lg {
   font-size: 1.15rem;
   padding: 0.6rem 1rem;
@@ -168,31 +172,30 @@
 /* ZÁKLADNÍ TLAČÍTKO – PLNÁ ŽLUTÁ */
 .btn,
 .btn-primary {
-  background-color: #ffed00;
+  background-color: #5e0000;
   border: none;
-  color: #000;
+  color: white;
   font-weight: 600;
   transition: background-color 0.3s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover,
 .btn-primary:hover {
-  background-color: #e6d800; /* tmavší žlutá při najetí */
+  background-color: #9e4747; 
   color: #555;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* OBTAŽENÉ TLAČÍTKO – ŽLUTÝ RÁMEČEK */
 .btn-outline-primary {
-  background-color: transparent;
-  border: 4px solid #ffed00;
-  color: #555;
+  background-color: #5e0000;
+  color: white;
   font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-outline-primary:hover {
-  background-color: #ffed00;
+  background-color: #9e4747;
   color: #555;
   border: none;
 }
@@ -212,8 +215,8 @@
 
 /* TLAČÍTKO NAHOŘE – DOPLŇKOVÉ */
 #scrollToTopBtn {
-  background-color: #ffed00;
-  color: #000;
+  background-color: #5e0000;
+  color: white;
   border: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, opacity 0.3s ease;
@@ -224,11 +227,15 @@
 }
 
 #scrollToTopBtn:hover {
-  background-color: #e6d800;
+  background-color: #9e4747;
 }
 
 .icon-yellow {
-  color:#ffed00 !important;
+  color:#5e0000 !important;
+}
+
+a .fab.fa-facebook-square:hover {
+  color: #1877f2; /* Facebook modrá */
 }
 
 
