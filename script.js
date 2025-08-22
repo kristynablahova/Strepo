@@ -36,3 +36,28 @@
       behavior: "smooth"
     });
   });
+
+  // cookie
+  // Kontrola, zda už uživatel souhlasil
+function hasConsented() {
+  return localStorage.getItem('cookiesAccepted') === 'true';
+}
+
+function showBanner() {
+  document.getElementById('cookieBanner').style.display = 'block';
+}
+
+function acceptCookies() {
+  localStorage.setItem('cookiesAccepted', 'true');
+  document.getElementById('cookieBanner').style.display = 'none';
+}
+
+// Při načtení stránky zkontrolujeme souhlas
+window.addEventListener('load', function() {
+  if (!hasConsented()) {
+    showBanner();
+  }
+});
+
+// Tlačítko souhlasu
+document.getElementById('acceptCookies').addEventListener('click', acceptCookies);

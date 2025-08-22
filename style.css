@@ -238,4 +238,32 @@ a .fab.fa-facebook-square:hover {
   color: #1877f2; /* Facebook modrá */
 }
 
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0; right: 0;
+  background: #333;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 10000;
+}
+
+.cookie-link {
+  color: #9e4747;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.cookie-btn {
+  margin-left: 15px;
+  background-color: #5e0000;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+}
 
