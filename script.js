@@ -4,18 +4,16 @@
     setTimeout(() => {
       const promoModal = new bootstrap.Modal(document.getElementById('promoModal'));
       promoModal.show();
-    }, 2000); // Modal se objeví po 2 sekundách
+    }, 2000); 
   });
 
   document.getElementById('contactRedirectBtn').addEventListener('click', function () {
     const modal = bootstrap.Modal.getInstance(document.getElementById('promoModal'));
     modal.hide();
 
-    // Počkej, až se modal zavře, pak přesměruj
     setTimeout(function () {
-      // Změň URL podle potřeby (kotva nebo jiná stránka)
-      window.location.href = '#kontakt';  // nebo '/kontakt.html'
-    }, 500); // 500ms odpovídá rychlosti zavírání Bootstrap modalu
+      window.location.href = '#kontakt';  
+    }, 500); 
   });
 
 // sroll to top
